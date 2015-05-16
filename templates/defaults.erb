@@ -1,0 +1,20 @@
+defaults {
+    udev_dir    <%= @udev_dir %>
+    polling_interval    <%= @polling_interval %>
+    selector    "<%= @selector %>"
+    path_grouping_policy    <%= @path_grouping_policy %>
+    getuid_callout    "<%= @getuid_callout %>"
+    prio_callout    "<%= @prio_callout %>"
+    path_checker    <%= @path_checker %>
+    rr_min_io    <%= @rr_min_io %>
+    max_fds   <%= @max_fds %>
+    rr_weight <%= @rr_weight %>
+    failback  <%= @failback %>
+<% if @no_path_retry != 'nil' then -%>
+    no_path_retry <%= @no_path_retry %>
+<% end -%>
+    user_friendly_names   <%= @user_friendly_names %>
+<% if @bindings_file != 'nil' then -%>
+    bindings_file "<%= @bindings_file %>"
+<% end -%>
+}

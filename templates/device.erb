@@ -1,0 +1,28 @@
+device {
+    vendor   "<%= @vendor %>"
+    product  "<%= @product %>"
+<% if @path_grouping_policy != 'nil' then -%>
+    path_grouping_policy  <%= @path_grouping_policy %>
+<% end -%>
+<% if @getuid_callout != 'nil' then -%>
+    getuid_callout  "<%= @getuid_callout %>"
+<% end -%>
+<% if @prio_callout != 'nil' then -%>
+    prio_callout  "<%= @prio_callout %>"
+<% end -%>
+<% if @path_checker != 'nil' then -%>
+    path_checker  <%= @path_checker %>
+<% end -%>
+<% if @path_selector != 'nil' then -%>
+    prio_callout  "<%= @prio_callout %>"
+<% end -%>
+<% if @failback != 'nil' then -%>
+    failback  <%= @failback %>
+<% end -%>
+<% if @rr_min_io != 'nil' then -%>
+    rr_min_io  <%= @rr_min_io %>
+<% end -%>
+<% if @product_blacklist != 'nil' then -%>
+    product_blacklist  <%= @product_blacklist %>
+<% end -%>
+}

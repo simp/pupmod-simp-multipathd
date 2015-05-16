@@ -1,0 +1,16 @@
+multipath {
+    wwid   <%= @wwid %>
+    alias  <%= @name %>
+<%if @path_grouping_policy != 'nil' then -%>
+    path_grouping_policy  <%= @path_grouping_policy %>
+<% end -%>
+<%if @path_selector != 'nil' then -%>
+    path_selector  "<%= @path_selector %>"
+<% end -%>
+<%if @failback != 'nil' then -%>
+    failback  <%= @failback %>
+<% end -%>
+<%if @rr_min_io != 'nil' then -%>
+    rr_min_io <%= @rr_min_io %>
+<% end -%>
+}
