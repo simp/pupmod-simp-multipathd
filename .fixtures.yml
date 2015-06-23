@@ -1,5 +1,6 @@
 ---
 fixtures:
+  repositories:
+    concat: "git://github.com/simp/pupmod-simp-concat"
   symlinks:
     multipathd: "#{source_dir}"
-    concat: "#{source_dir}/../concat"
