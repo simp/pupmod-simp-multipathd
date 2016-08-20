@@ -1,0 +1,31 @@
+{
+  "name":    "simp-multipathd",
+  "version": "4.1.1",
+  "author":  "simp",
+  "summary": "puppet module for managing multipathd",
+  "license": "Apache-2.0",
+  "source":  "https://github.com/simp/pupmod-simp-multipathd",
+  "project_page": "https://github.com/simp/pupmod-simp-multipathd",
+  "issues_url":   "https://simp/project.atlassian.net",
+  "tags": [ "simp", "multipathd"],
+  "dependencies": [
+    {
+      "name": "simp/simpcat",
+      "version_requirement": ">= 4.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6"
+      ]
+    }
+  ]
+}
